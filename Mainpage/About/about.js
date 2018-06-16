@@ -1,8 +1,6 @@
-(function() {
-  angular.module('app')
-    .component('about', {
-      templateUrl: 'mainpage/about/about.html',
-
-
-    });
+(function(){
+   angular.module('app')
+   .component('aboutPage',{
+       templateUrl: 'mainpage/about/about.html',
+   });
 })();

@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 10px;
 }
 
 .logo-section{
@@ -20,19 +21,33 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-.brew-logo{
-  border: solid black;
-  border-radius: 50px;
-  height: 90px;
-  width: 90px;
+#brew-logo{
+  /* border: solid black; */
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
 }
 
-.map{
-  border: solid black;
-  height: 50vh;
-  margin-top: 30px;
+.checked-in {
+  background-color: black;
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 
@@ -40,6 +55,33 @@
   border: solid black;
   height: 15vh;
   margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+img{
+  width: 70%;
+}
+
+.material-icons{
+  font-size: 100px;
+}
+
+.brew-detroit{
+  padding-top: 25px;
+}
+
+.detroit-beer{
+  margin-top: -11px;
+}
+
+.eastern-market{
+  margin-top: -5px;
+}
+
+.motor-city{
+  padding-top: 40px;
 }
 
 /* More Info Page */
@@ -78,3 +120,74 @@
 .brew-info{
   border: solid black;
 }
+
+/* Check try */
+
+.wlcm-enter{
+  font-size: 18px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+/* About CSS */
+
+.about-brews {
+   text-align: center;
+   font-size: 30px;
+}
+
+.about-D {
+   color:orange;
+   font-family: monotype;
+}
+
+.about-info {
+   text-align: center;
+   font-size: 20px;
+
+}
+
+.about-button {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding: 10px 32px;
+   border-radius: 20px;
+   margin-left: 575px;
+   font-size: 20px;
+   background-color: lightgrey;
+   color: orange;
+   border: 3px solid black;
+
+}
+
+a:visited {
+   color: orange;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+a:link {
+   color: orange;
+   background-color: transparent;
+   text-decoration: none;
+   text-align: center;
+   display: flex;
+   align-items: center;
+}
+
+a:hover {
+   color:black;
+   background-color: transparent;
+   text-decoration: underline;
+}
+
+/* .startbtn {
+   position: relative;
+   margin-top: 0px;
+
+} */
+
+/* Log In CSS */

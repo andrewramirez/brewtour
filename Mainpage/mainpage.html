@@ -1,29 +1,36 @@
+<h1 class="bitd-logo">Brews In The D</h1>
+
 <section class="main-top-nav">
-	  <span class="about"><a href="#">About</a></span> <span class="progress"><a href="#">Progress</a></span>
+	  <span class="about"><a href="#">About</a></span> <span class="progress"><a href="">Progress</a></span>
 </section>
 
-
+<quick-checkin ng-show="$ctrl.showQuickCheckin" on-checkin="$ctrl.onCheckin"></quick-checkin>
 <section class="logo-section">
 
-  <div class="brew-logo">
+<button  ng-click="$ctrl.quickCheckin(brewery)" id="brew-logo" ng-class="{'checked-in': brewery.checkedIn}" ng-repeat="brewery in $ctrl.breweries" >
+	<img src="{{brewery.src}}" />
+</button>
 
-  </div>
-  <div class="brew-logo">
+  <!-- <button type="button" id="brew-logo" ng-click="$ctrl.quickCheckin()" class="available">
+    <img src="pictures/beer-tour-logos/brew-detroit-logo.png" alt="Brew Detroit" class="brew-detroit">
+  </button>
 
-  </div>
-  <div class="brew-logo">
+  <button type="button" id="brew-logo" class="available">
+    <img src="pictures/beer-tour-logos/detroitbeerco.png" alt="Detroit Beer" class="detroit-beer">
+  </button>
 
-  </div>
-  <div class="brew-logo">
+  <button type="button" id="brew-logo" class="available">
+    <img src="pictures/beer-tour-logos/easternmarketbeer.png" alt="Eastern Market Beer" class="eastern-market">
+  </button>
 
-  </div>
+  <button type="button" id="brew-logo" class="available">
+    <img src="pictures/beer-tour-logos/motorcitybeer.png" alt="Motor City Beer" class="motor-city">
+  </button> -->
 
 </section>
 
-<div class="map">
-
+<div class="resp-container">
+  <iframe class="resp-iframe" src="https://www.google.com/maps/d/embed?mid=1iFiZxI8JBMKl2bbPVWvUNMicgM2YRafr"></iframe>
 </div>
 
-<div class="main-checkin">
-
-</div>
+<!-- <quick-checkin></quick-checkin> -->

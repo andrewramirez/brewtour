@@ -1,8 +1,8 @@
 (function() {
   angular.module('app')
-    .component('mainpage', {
+    .component('mainPage', {
       templateUrl: 'mainpage/mainpage.html',
-      // controller: 'Mainpage',
+      controller: 'MainPageController',
 
     });
 })();
