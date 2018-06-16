@@ -1,28 +1,7 @@
-(function(){
+(function() {
   angular.module('app')
-    .controller('MainPageController', function(){
-      var $ctrl = this;
-
-        $ctrl.onCheckin = function(){
-          // check in the correct icon
-          // save in data factory
-          $ctrl.current.checkedIn = true;
-          // reset current
-          $ctrl.current = {};
-          //hide quick check in
-          $ctrl.showQuickCheckin = false;
-        }
-        $ctrl.quickCheckin = function(brewery){
-          if(!brewery.checkedIn) {
-            $ctrl.current = brewery;
-            $ctrl.showQuickCheckin = true;
-          }
-
-      }
-
-
-      $ctrl.breweries = [
-        {
+    .factory('DataFactory', function() {
+      var breweries = [{
           name: 'Brew Detroit',
           id: '1',
           src: 'pictures/beer-tour-logos/brew-detroit-logo.png',
@@ -46,6 +25,18 @@
           src: 'pictures/beer-tour-logos/motorcitybeer.png',
           checkedIn: false
         }
-      ]
-    })
+      ];
+
+      return {
+        setData: function(data) {
+          breweries = data;
+        },
+
+        getData: function() {
+          return breweries;
+        }
+      }
+
+
+    });
 })();

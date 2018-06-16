@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app"> 
+<html lang="en" ng-app="app">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Brews in the D</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+   <!-- <a href="https://icons8.com"</a> -->
+  <title>Brews in the D</title>
 </head>
 <body>
- 
+
+<ng-view></ng-view>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular-route.js"></script>
+<script src="index.js"></script>
+<script src="mainpage/mainpage.js"></script>
+<script src="mainpage/mainpage.controller.js"></script>
+<script src="mainpage/about/about.js"></script>
+<script src="more-info/moreinfo.js"></script>
+<script src="more-info/moreinfo.controller.js"></script>
+<script src="quick-checkin/quick-checkin.js"></script>
+<script src="quick-checkin/quick-checkin.controller.js"></script>
+
+
 </body>
 </html>
