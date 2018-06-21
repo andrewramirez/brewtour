@@ -1,12 +1,15 @@
-/* body{
-  background-image: image("pictures/detroit-wallpapers-014.jpg");
-  height: 100vh;
-  width: 100vw;
+ /* body{
+  background-image:("pictures/detroit-wallpapers-014.jpg");
   position: absolute;
-  z-index: -1; */
-
+  z-index: -1;
+} */
 
 /* Main Page */
+
+.bitd-logo{
+  display: flex;
+  justify-content: center;
+}
 
 .main-top-nav{
   display: flex;
@@ -64,8 +67,8 @@ img{
   width: 70%;
 }
 
-.material-icons{
-  font-size: 100px;
+.material-icons.md-48{
+  font-size: 48px;
 }
 
 .brew-detroit{
@@ -82,6 +85,12 @@ img{
 
 .motor-city{
   padding-top: 40px;
+}
+
+.skyline{
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 
 /* More Info Page */
@@ -121,6 +130,24 @@ img{
   border: solid black;
 }
 
+.more-info-box{
+  box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.3);
+   background-color: white;
+   width: 400px;
+   height: 393px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top;
+   auto;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+   position: fixed;
+   top: 110px;
+   left: 10px;
+   right: 0px;
+   z-index: 10;
+}
 /* Check try */
 
 .wlcm-enter{
@@ -190,4 +217,35 @@ a:hover {
 
 } */
 
-/* Log In CSS */
+/* Progress Bar */
+
+.meter {
+    height: 20px;  /* Can be anything */
+    position: relative;
+    background: #555;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+   display: block;
+   height: 100%;
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   background-color: orange;
+   background-image: linear-gradient(
+     center bottom,
+     rgb(43,194,83) 37%,
+     rgb(84,240,84) 69%
+   );
+   box-shadow:
+     inset 0 2px 9px  rgba(255,255,255,0.3),
+     inset 0 -2px 6px rgba(0,0,0,0.4);
+   position: relative;
+   overflow: hidden;
+ }

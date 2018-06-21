@@ -4,7 +4,8 @@
       templateUrl: 'more-info/moreinfo.html',
       controller: 'MoreInfoController',
       bindings: {
-        onCheckin: '<'
+        onCheckin: '<',
+        placeId: '<'
       }
 
 
