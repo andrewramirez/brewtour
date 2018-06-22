@@ -25,7 +25,20 @@
           id: 'ChIJTQ3ghrrSJIgRZpsH2YS97zM',
           src: 'pictures/beer-tour-logos/motorcitybeer.png',
           checkedIn: false
+        },
+        {
+          name: 'Atwater Brewery & Tap House',
+          id: 'ChIJX7qSFMssO4gR50sQTBiN40E',
+          src: 'pictures/beer-tour-logos/Atwater_Logo_Small.png',
+          checkedIn: false
+        },
+        {
+          name: 'Batch Brewing Company',
+          id: 'ChIJj4k6iE8tO4gRgL1jtCw72ns',
+          src: 'pictures/beer-tour-logos/batch-logo-flat-large.png',
+          checkedIn: false
         }
+
       ];
 
       return {

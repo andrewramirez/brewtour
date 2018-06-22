@@ -1,10 +1,10 @@
 (function() {
   angular.module('app')
-    .component('quickCheckin', {
+    .component('progressBar', {
       templateUrl: 'mainpage/progress/progress.html',
-      controller: 'ProgressController',
       bindings: {
-        onCheckin: '<'
+        completed: '<'
       }
+    });
       
-})();
+ })();
