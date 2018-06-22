@@ -23,7 +23,7 @@
         {
           name: 'Motor City Brewing Works',
           id: 'ChIJTQ3ghrrSJIgRZpsH2YS97zM',
-          src: 'pictures/beer-tour-logos/motorcitybeer.png',
+          src: 'pictures/beer-tour-logos/MCBW-since-1994.png',
           checkedIn: false
         },
         {

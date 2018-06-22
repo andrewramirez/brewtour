@@ -1,8 +1,7 @@
- /* body{
-  background-image:("pictures/detroit-wallpapers-014.jpg");
-  position: absolute;
-  z-index: -1;
-} */
+ .body{
+  background-color: orange;
+ 
+}
 
 /* Main Page */
 
@@ -27,12 +26,16 @@
   padding-bottom: 25px;
 }
 
-#brew-logo{
-  /* border: solid black; */
+.brew-logo{
+  border: solid black;
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  /* background-color: grey; */
+  background-color: rgb(189, 183, 183);
+}
+
+.brew-logo:hover{
+  transform: scale(1.10) perspective(1px);
 }
 
 .checked-in {
@@ -110,7 +113,7 @@ img{
   margin: auto;
   margin-top: 15%;
   padding: 10px;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .info-brew-logo{
@@ -143,8 +146,7 @@ img{
    height: 800px;
    margin-left: auto;
    margin-right: auto;
-   margin-top;
-   auto;
+   margin-top: auto;
    padding-left: 30px;
    padding-right: 30px;
    padding-top: 10px;

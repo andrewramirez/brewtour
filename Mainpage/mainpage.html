@@ -1,3 +1,4 @@
+<!-- <div class = "body"> -->
 <h1 class="bitd-logo">Brews In The D</h1>
 
 
@@ -7,7 +8,7 @@
 
 <section class="logo-section">
 
-<button  ng-click="$ctrl.quickCheckin(brewery)" id="brew-logo" ng-class="{'checked-in': brewery.checkedIn}" ng-repeat="brewery in $ctrl.breweries" >
+<button  ng-click="$ctrl.quickCheckin(brewery)" class="brew-logo" ng-class="{'checked-in': brewery.checkedIn}" ng-repeat="brewery in $ctrl.breweries" >
 	<img src="{{brewery.src}}" />
 </button>
 <div>
@@ -18,5 +19,5 @@
 <div class="resp-container">
   <iframe class="resp-iframe" src="https://www.google.com/maps/d/embed?mid=1iFiZxI8JBMKl2bbPVWvUNMicgM2YRafr"></iframe>
 </div>
-
+</div>
 
