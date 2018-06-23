@@ -5,7 +5,7 @@
       var breweries = [{
           name: 'Brew Detroit',
           id: 'ChIJBykjvkYtO4gRvk7pFr5GN84',
-          src: 'pictures/beer-tour-logos/brew-detroit-logo.png',
+          src: 'pictures/beer-tour-logos/brew_detroit_logo.png',
           checkedIn: false
         },
         {

@@ -5,7 +5,8 @@
       controller: 'MoreInfoController',
       bindings: {
         onCheckin: '<',
-        placeId: '<'
+        placeId: '<',
+        close: '<'
       }
 
 

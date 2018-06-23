@@ -15,7 +15,10 @@
           $ctrl.showQuickCheckin = false;
           $ctrl.completed = numberCheckedIn();
         }
- 
+        
+        $ctrl.close= function(){
+          $ctrl.showQuickCheckin=false;
+        }
  
         $ctrl.quickCheckin = function(brewery){
           if(!brewery.checkedIn) {
