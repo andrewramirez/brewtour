@@ -137,24 +137,26 @@
 
  .brew-name {
    width: 250px;
-   padding-top: 32px; */
+   padding-top: 32px; 
  }
 
- .info-checkin {
+ /* .info-checkin {
    border: solid black;
    height: 15vh;
    margin-top: 35px;
- }
+ } */
 
  .brew-info {
-   border: solid black;
+   border-top: solid black;
+   border-bottom: solid black;
+   margin-bottom: 25px;
  }
 
  .more-info-box {
    box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.3);
    background-color: #0346b2;;
-   width: 800px;
-   height: 800px;
+   width: 80vw;
+   height: 80vh;
    margin-left: auto;
    margin-right: auto;
    margin-top: auto;
@@ -166,7 +168,7 @@
    left: 10px;
    right: 0px;
    z-index: 10;
-   max-height: calc(200vh - 210px);
+   max-height: calc(100vh - 210px);
    overflow-y: auto;
    color: white;
  }
@@ -198,7 +200,7 @@
    font-size: 20px;
  }
 
- .about-button {
+ .about-button, .info-checkin {
    text-align: center;
    display: flex;
    align-items: center;
@@ -226,22 +228,25 @@
    align-items: center;
  }
 
- .about-button:hover {
+ .about-button:hover, .info-checkin:hover {
    background-color: darkgrey;
    text-decoration: none;
  }
 
- .about-button:active {
+ .about-button:active, .info-checkin:active {
   background-color: blue;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
  /* Progress Bar */
-
+.progress-div{
+  display: flex;
+  width: auto;
+}
 
  .progress {
-   width: 1000px;
+   width: 80vw;
    margin: 20px auto;
    text-align: center;
  }
@@ -313,3 +318,13 @@
  .progress .circle.done .title {
    color: #444;
  }
+ .more-info-pics-container{
+  display: flex;
+}
+ .more-info-pics{
+   width: 200px;
+   height: 200px;
+   margin: auto;
+ }
+
+ 

@@ -1,27 +1,28 @@
-<!-- <div class="info-page-border"> -->
-<!-- <h4 class="form-back"><a href="#!/app"><i class="material-icons md-18">arrow_back</i>Go Back</a></h4> -->
-<div class = "moreinfo">
+<!-- <div ng-if= "!$ctrl.current"> -->
+  <!-- <div class = "moreinfo" ng-if="loading"> -->
 <div class= "closebtn">
   <input type="button" value="X" ng-click="$ctrl.close()">
 </div>
-<div>
-<h1 class="brew-name">{{$ctrl.name}}</h1>
-
+<div class="more-info-pics-container">
+<!-- <h1 class="brew-name">{{$ctrl.name}}</h1> -->
+<img src="{{$ctrl.current.src}}" class="more-info-pics">
 </div>
-
-
 
 <div class="brew-info">
   <p>Hours of Operation: {{$ctrl.hours}}</p>
   <p>Phone Number: {{$ctrl.phone}}</p>
   <p>Address: {{$ctrl.address}}</p>
   <p>Google Rating: {{$ctrl.rating}}</p>
-  <p>About batch brewery</p>
+  <p>Description: {{$ctrl.current.description}}</p>
+  <p>Notable Beers: {{$ctrl.current.notableBeers}}</p>
+  <p>Year Established: {{$ctrl.current.yearEstablished}}</p>
+
+
 </div>
 
-<div class="info-checkin">
-    <i class="material-icons" ng-click="$ctrl.checkin()">check_circle</i><h1>Check In</h1>
-    <p>{{$ctrl.message}}</p>
+<button class="info-checkin" ng-click="$ctrl.checkin()">Check In</button>
+<div>
+  <p>{{$ctrl.message}}</p>
 </div>
 
 </div>

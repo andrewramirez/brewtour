@@ -24,6 +24,7 @@
           if(!brewery.checkedIn) {
             $ctrl.current = brewery;
             $ctrl.showQuickCheckin = true;
+            DataFactory.setCurrent(brewery);
           }
  
       }
