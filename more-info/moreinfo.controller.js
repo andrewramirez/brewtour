@@ -14,6 +14,7 @@
             $ctrl.phone = result.formatted_phone_number;
             $ctrl.name = result.name;
             $ctrl.rating = result.rating;
+      
           });
 
 
