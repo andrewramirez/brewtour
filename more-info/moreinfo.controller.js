@@ -24,14 +24,9 @@
       };
 
 
-      // $ctrl.form.hide();
-      //
-      // $ctrl.fadeIn(500);
-      // form.show(quickCheckin);
-
       $ctrl.checkin = function(){
         console.log(distance);
-        if (distance <= 100) {
+        if (distance <= 5000) {
           $ctrl.onCheckin();
         }
         else($ctrl.message=message);
