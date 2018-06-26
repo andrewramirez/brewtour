@@ -55,7 +55,8 @@
           description: "Co-owners of Batch Brewing Company, stephen and jason are a couple of cats that have known each other for years. they left corporate careers to start this little brewery, where they spend basically all of their time. it makes the day easier when you get to work with people you actually like, you know?",
           notableBeers: "Scurrilous IPA & Blood In, Orange Out",
           yearEstablished: "2013",
-          checkedIn: false
+          checkedIn: false,
+          className: "stretch"
         }
 
       ];

@@ -1,11 +1,16 @@
-<!-- <div ng-if= "!$ctrl.current"> -->
-  <!-- <div class = "moreinfo" ng-if="loading"> -->
-<div class= "closebtn">
-  <input type="button" value="X" ng-click="$ctrl.close()">
+ 
+  <div class="loader" ng-if="!$ctrl.current">Loading...</div>
+      <div></div>
 </div>
+<div ng-if= "$ctrl.current">    
+<!-- <div class= "closebtn">
+  <input type="button" value="X" ng-click="$ctrl.close()">
+</div> -->
+<div class= "closebtn">
+    <i class="material-icons" ng-click="$ctrl.close()">close</i>
+   </div>
 <div class="more-info-pics-container">
-<!-- <h1 class="brew-name">{{$ctrl.name}}</h1> -->
-<img src="{{$ctrl.current.src}}" class="more-info-pics">
+<img src="{{$ctrl.current.src}}" class="more-info-pics  {{$ctrl.current.className}}">
 </div>
 
 <div class="brew-info">
