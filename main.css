@@ -1,5 +1,5 @@
  .body {
-   background-color: orange;
+  background: linear-gradient(to bottom, #ff6600 44%, #ffffff 100%);
    font-family: 'Ubuntu', sans-serif;
  }
 
@@ -154,7 +154,7 @@
 
  .more-info-box {
    box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.3);
-   background-color: #0346b2;;
+   background: linear-gradient(to bottom, #0000ff 44%, #0099ff 100%);
    width: 80vw;
    height: 80vh;
    margin-left: auto;
@@ -171,6 +171,7 @@
    max-height: calc(100vh - 210px);
    overflow-y: auto;
    color: white;
+   opacity: .85;
  }
 
  /* Check try */
@@ -246,7 +247,7 @@
 }
 
 .progress {
-  width: 1000px;
+  width: 80vw;
   margin: 20px auto;
   text-align: center;
 }
@@ -432,3 +433,29 @@
 display: flex;
 justify-content: flex-end;
 }
+
+.s-info{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  
+} 
+
+.p-info{
+  font-size: 30px;
+  
+
+  /* padding-left: 10px; */
+  
+}
+
+span{
+  display: inline-block;
+}
+  
+.phonenum{
+  padding-left: 10px;
+  font-size: 25px;
+  color: orange;
+}
+

@@ -28,7 +28,7 @@
 
 
       $ctrl.checkin = function(){
-        if (distance <= 5000) {
+        if (distance <= 1500) {
           $ctrl.onCheckin();
         }
         else($ctrl.message=message);

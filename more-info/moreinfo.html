@@ -14,8 +14,9 @@
 </div>
 
 <div class="brew-info">
-  <p>Hours of Operation: {{$ctrl.hours}}</p>
-  <p>Phone Number: {{$ctrl.phone}}</p>
+  <p>Hours of Operation:</p>
+  <p ng-repeat="time in $ctrl.hours">{{time}}</p>
+  <span><p class = "p-info">Phone Number:</p> <h2>{{$ctrl.phone}}</h2><span>
   <p>Address: {{$ctrl.address}}</p>
   <p>Google Rating: {{$ctrl.rating}}</p>
   <p>Description: {{$ctrl.current.description}}</p>
