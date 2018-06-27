@@ -3,7 +3,7 @@
     .controller('MoreInfoController', function(places, $timeout, LocationFactory, DataFactory){
       var $ctrl = this;
       var fields = ['formatted_address', 'name', 'rating', 'opening_hours', 'formatted_phone_number', "geometry"]
-      var message = ("Sorry, you have to be at the brewery to check in")
+      var message = ("Sorry, you have to be at the brewery to check in!")
       var distance;
       $ctrl.$onInit = function(){
         LocationFactory.getCoordinates().then(function(coordinates){
